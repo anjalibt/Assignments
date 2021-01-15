@@ -1,0 +1,273 @@
+Anjali Assignment:
+
+
+1. What command is used to get the IP addresses of all interfaces
+on a server?
+- The ifconfig command can also be used to display the IP addresses being used by the system.
+
+2. What is the purpose of "mv" command?
+- mv stands for move. mv is used to move one or more files or directories from one place to another in file system like UNIX. 
+
+3. Which command is used to create a new empty file?
+- touch command.
+
+4. Which command is used to display the contents of a directory?
+- ls command to display the contents of a directory. The ls command writes to standard output the contents of each specified Directory or the name of each specified File, along with any other information you ask for with the flags.
+
+5. Which command is used to display all the file names along with
+their types of the current directory?
+- The ls command is used to list files or directories in Linux 
+
+6. Which command is used to clear the terminal?
+Clear
+
+7. What are daemons?
+-A daemon is a background, non-interactive program.Some examples include inetd , httpd , nfsd , sshd , named , and lpd
+
+8. Which command is used to move to the parent directory?
+- The cd command can be used to change into a subdirectory, move back into the parent directory, move all the way back to the root directory or move to any given directory.
+
+9. What does echo command do?
+- echo command in linux is used to display line of text/string that are passed as an argument
+
+10.How to display content of a file?
+- CAT command
+
+11. How to identify which shell you are using?
+- Check $SHELL 
+chsh command syntax
+-s {shell-name} 
+
+12. How do you check if a particular service is running?
+- service command to start, stop, and check the status of the service.
+
+13.What is the command to run a program with elevated
+permissions?
+- “sudo” with any command
+CTRL+SHIFT+ENTER.
+
+14.Which command is used to display the path of the current
+working directory?
+- The pwd command stands for print working directory.
+
+15. How to delete a directory forcefully?
+- The rmdir command removes empty directories only. Hence you need to use the rm command to remove files on Linux.
+- Type the command rm -rf dirname to delete a directory forcefully.
+Verify it with the help of ls command on Linux.
+
+16.Which command is used to switch from superuser to normal
+user?
+- The switch user command su is used to change between different users on a system, without having to logout.
+
+17. How to switch to superuser (root) with elevated permissions?
+- Run sudo <command> and type in your login password, if prompted, to run only that instance of the command as root. ...
+Run sudo -i . ...
+Use the su (substitute user) command to get a root shell. ...
+Run sudo -s .
+
+18.How to determine the type of a file?
+- The easiest way to determine the type of a file on any operating system is usually to look at its extension (for instance .xml, .sh, .c, .tar etc..).
+
+
+
+
+
+Version1.0
+
+INTERMEDIATE LEVEL
+1. What are the different modes when using VI editor?
+- Two modes of operation in vi are entry mode and command mode. You use entry mode to type text into a file, while command mode is used to type commands that perform specific vi functions.
+
+2. Which command is used to create multiple directories simultaneously?
+- The mkdir command in Linux/Unix allows users to create or make new directories. mkdir stands for “make directory.” 
+
+3. What is LILO?
+-LILO stands for Linux Loader that is used to load Linux into memory. It can boot operating systems from floppy disks, hard disks, and it does not depend on a specific file system. 
+
+4. How cd ~, cd / and cd - are different from each other?
+
+cd /: this command is used to change directory to the root directory.
+cd ~ : this command is used to change directory to the home directory.
+cd - : will print the directory it changed to out to standard output
+
+
+5. What is a grep command?
+-The grep filter searches a file for a particular pattern of characters, and displays all lines that contain that pattern. The pattern that is searched in the file is referred to as the regular expression (grep stands for globally search for regular expression and print out). Syntax:
+grep [options] pattern [files]
+Options Description
+-c : This prints only a count of the lines that match a pattern
+-h : Display the matched lines, but do not display the filenames.
+-i : Ignores, case for matching
+-l : Displays list of a filenames only.
+-n : Display the matched lines and their line numbers.
+-v : This prints out all the lines that do not matches the pattern
+-e exp : Specifies expression with this option. Can use multiple times.
+-f file : Takes patterns from file, one per line.
+-E : Treats pattern as an extended regular expression (ERE)
+-w : Match whole word
+-o : Print only the matched parts of a matching line,
+ with each such part on a separate output line.
+
+
+6. If we are in the directory X and we are running rmdir X being in that
+directory X. Will this command successfully remove the directory or not?
+-To delete a non-empty directory (one that still contains files or other directories in it) rmdir will not work. Here you have two choices. 
+You can either remove all the contained files and directories by hand using the rmdir and rm commands, or you can use rm's -r flag.
+
+7. What are the contents of /usr/local?
+-/usr/local
+The place for locally installed software and other files. Distributions may not install anything in here. It is reserved solely for the use of the local administrator. This way he can be absolutely certain that no updates or upgrades to his distribution will overwrite any extra software he has installed locally.
+
+8. Which command is used to display the current username?
+- whoami command prints the user name of the effective user ID.
+
+9. What command is used to change your password?
+- passwd command in Linux is used to change the user account passwords. 
+
+10. How to find the difference in two configuration files?
+- Diff is simple and easy to use, it comes pre-installed on most Linux distributions. It compares files line by line and outputs the difference between them.
+
+11. How to find where a file is located in Linux?
+- find . -name thisfile.txt
+If you need to know how to find a file in Linux called thisfile.txt, it will look for it in current and sub-directories.
+12. Which command shows the users that are logged in?
+- w command shows information about the Linux users currently on the server, and their running processes.
+
+13. How to forcefully stop a process which is running in the background?
+- To kill a process, we navigate through that list, right-click the process, and choose the kill option.
+
+Use Alt+F4 keyboard shortcut.
+Use Taskkill.
+Kill a Not Responding process using a Shortcut.
+Terminate ALL open applications instantly.
+
+14. Which command is used to list the name of files starting from any
+particular alphabet or string?
+ls -d
+
+
+15. How to move multiple files of the same extension to a different directory?
+-mv command in linux allow us to move more than one file into another directory. 
+
+16. What command would you use to check how much memory is being
+used ?
+-Entering cat /proc/meminfo in your terminal opens the /proc/meminfo file.
+
+17. Which command is used to display the list of content in reverse order?
+- ls command displays the files alphabetically in the output. But if you want, you can also make the tool display files in reverse order. For this, you'll have to use the tool's -r command-line option.
+
+18. What command is used to show how long it's been since the server was
+rebooted?
+-'who -b' command which displays the last system reboot date and time
+
+19. What command is used to change the ownership of a file?
+- The command chown /ˈtʃoʊn/, an abbreviation of change owner, is used on Unix and Unix-like operating systems to change the owner of file system files, directories.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Version1.0
+ADVANCED LEVEL
+How to see the list of mounted devices on a Linux system?
+-we can mount command to list mount points. When you run mount command without any options it will list mount points.
+$ mount
+or
+1) Listing from /proc using cat command. To list mount points you can read contents of the file /proc/mounts. ...
+2) Using Mount Command. You can use mount command to list mount points. ...
+3) Using df command. You can use df command to list mount points. ...
+4 ) Using findmnt. ...
+
+2. How to check disk usage in terms of kilobytes(K), megabytes(M) and
+gigabytes(G)?
+-df –h
+This displays the size in kilobytes (K), megabytes (M), and gigabytes (G).
+
+3. What is Swap Space?What is a typical size for a swap partition in Linux?
+-Swap space in Linux is used when the amount of physical memory (RAM) is full, swap size of 20% of RAM for modern systems (i.e. 4GB or higher RAM).
+
+4. How would you schedule a task in Linux?
+-Cron, To list all the scheduled cron jobs for the current user, run the following command. It’ll print all the contents of the crontab file.
+
+5. How these commands would be working try and explain (files contain
+“hello” word) : 
+-grep -i hello file2.tx
+
+● grep -v -i hello file1.txt
+grep -i hello file2.tx
+● grep -A 2 hello file2.txt
+● grep -C 4 hello file1.txt
+● grep -B 3 hello file1.txt
+● ps -ef | more
+awk '{print $2,$5;}' employee.txt
+
+6. What is the export command used for?(Give Example)
+-The export command is a built-in utility of Linux Bash shell.
+
+7. Explain the redirection operator?
+-A redirection operator is a special character that can be used with a command, like a Command Prompt command or DOS command, to either redirect the input to the command or the output from the command.
+
+8. Which command is used to review boot messages?
+-During boot, messages can be viewed using Shift+PgUp but when the rc. S script finishes, init starts an agetty on tty1 which prints a login prompt
+
+9. Which command is used to change the permissions of a file?Explain its
+usage?
+-the chmod command to set permissions in either of two modes: Absolute Mode – Use numbers to represent file permissions (the method most commonly used to set permissions). 
+
+10. Which command would you use to create a file system on a new hard
+drive?
+-The newfs command is a friendlier version of the mkfs command that is used to create file systems.
+
+11. How to compress files in Linux?
+-tar, zip, gzip, bzip2, xz
+But gz file on Linux is as follows:
+Open the terminal application in Linux.
+Run tar command to create an archived named file. tar. gz for given directory name by running: tar -czvf file. tar. gz directory.
+Verify tar. gz file using the ls command and tar command.
+
+12. Which file is used to automatically mount file systems on boot?
+/etc/fstab
+
+-File systems listed in the /etc/fstab file are automatically mounted whenever you boot, unless this feature is explicitly turned off with the noauto option.
+
+13. Find out the purpose of each of the following commands:
+shutdown
+-The shutdown command brings the system down in a secure way. All logged-in users are notified that the system is going down, and login operations are blocked. It is possible to shut the system down immediately, or after a specified delay
+
+
+
+diff
+-diff stands for difference. This command is used to display the differences in the files by comparing the files line by line.
+
+sort
+-SORT command sorts the contents of a text file, line by line. sort is a standard command line program that prints the lines of its input or concatenation of all files listed in its argument list in sorted order.
+
+ps: 
+-The ps command, short for Process Status, is a command line utility that is used to display or view information related to the processes running in a Linux system.
+
+kill
+-The kill command is used to send a signal to processes
+
+mount
+-The mount command mounts a storage device or filesystem, making it accessible and attaching it to an existing directory structure.
+
+nano
+-This opens a new editor window, and you can start editing the file.
+
+14. What are symbolic links?How do you create one using command?
+-A symbolic link, also termed a soft link, is a special kind of file that points to another file, much like a shortcut in Windows or a Macintosh alias. 
+The syntax for creating a symlink is: ln -s <path to the file/folder to be linked> <the path of the link to be created>
+15. How would you copy a file or a directory from your system to another
+system on the same network?
+-For example, to copy a single file /srv/foo_file from the server to the current directory, use the scp command (do not forget the dot!): scp tux@sun.example.com:/foo_file .
+ To copy a whole directory structure, use the recursive mode of scp: scp -r tux@sun.example.com:/foo_directory .
